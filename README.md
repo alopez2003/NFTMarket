@@ -8,3 +8,11 @@ NOTA: Desde que inicié este master, no ha existido un grupo, siempre hemos entr
 
 ## Sprint 3
 
+En este sprint vamos a trabajar con una cuenta diferente, desde que la cuenta que ocupabamos de MetaMask quedó con una actividad pendiente, al parecer las comisiones que está pidiendo son excesivas, por lo que ocuparemos entonces otra cuenta, vamos a trabajar con la cuenta con la address: 0xC65fA7Ce4FF244727739a81FC4d9805d978e34Df
+
+Vamos a ocupar los contratos proporcionados por Open Zeppelin de [ERC721.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.8.1/contracts/token/ERC721/ERC721.sol) y [ERC1155.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.8.1/contracts/token/ERC1155/ERC1155.sol) respectivamente.
+
+Debido a que queremos interactuar con el contrato, y es necesario verificarlo desde un inicio, conforme al Sprint anterior vimos que tuvimos desafios interesantes con el Hardhat, en específico con el flattener, aún cuando teníamos el archivo "flattened", cuando verificabamos no podía ser identificado una parte del código, no coincidía con la verificación. En este Sprint vamos a ocupar para el despliegue del contrato Remix, con el fin de poder verificar los contratos desde un inicio.
+
+### ERC-720
+
