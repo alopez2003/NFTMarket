@@ -17,7 +17,7 @@ A pesar de trabajar sobre Remix, vamos a cargar los contratos de la misma carpet
 ![image](https://github.com/alopez2003/NFTMarket/assets/67942268/7582159e-c15b-43f8-be03-b4633161faa3)
 
 
-### MyNFT.sol
+### MyNFT.sol - ERC721
 
 Este archivo está hecho con el fin de poder mintear nuevos NFT's, se puede encontrar en el directorio raíz de este GitHub
 
@@ -69,6 +69,43 @@ Y listo, ya tenemos confirmación de que fue generado el Bytecode
 Y vemos que ya podemos interactuar con las funciones de lectura y escritura del contrato
 
 ![image](https://github.com/alopez2003/NFTMarket/assets/67942268/9c8b1f01-6c47-44b6-aa52-20cd1a5dae9d)
+
+Lo primero que hacemos es conectarlo a nuestra cartera de MetaMask y veamos algunas funciones de lectura como el balance (balanceOf) con la dirección de mi address 0xC65fA7Ce4FF244727739a81FC4d9805d978e34Df y vemos que el balance es 0
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/e65ccebd-d119-41ef-b3ab-3bf07fdfe196)
+
+#### mint - awardItem
+
+Ahora lo que hacemos, vamos a las funciones de escritura, en específico la de awardItem, donde vamos a mintear un nuevo NFT, le llamaremos NFTIEBSALG1 hacia mi address 0xC65fA7Ce4FF244727739a81FC4d9805d978e34Df y le damos click en el botón de Write
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/8186d73c-ca09-4cee-bfa3-9106849896f0)
+
+Nos pide confirmación en MetaMask
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/e2be1c8e-9a5b-4372-925a-a18a4cfd429f)
+
+Y vemos la transacción ejecutada hace poco tiempo
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/9952e5d8-e585-429f-acd8-de7a7b9f7cb7)
+
+https://testnet.bscscan.com/tx/0x1b448512ffc116404425e93d5dc4c923744b52e7dedbf786286882bfce2e4cd7
+
+Vemos que se ha creado el Token 0
+
+Si ahora vamos a la parte de lectura, y consultamos el balanceOf con la dirección 0xC65fA7Ce4FF244727739a81FC4d9805d978e34Df podemos ver tenemos la cantidad de 1, así como podemos ver que en el ownerOf del tokenId 0 pone la dirección de mi address, y también si hacemos la consulta de tokenURI con el tokenId 0 vemos que se llama NFTIEBSALG1
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/9836b00b-db2e-4812-981a-961dbaa4b224)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
