@@ -10,9 +10,90 @@ NOTA: Desde que inicié este master, no ha existido un grupo, siempre hemos entr
 
 En este sprint vamos a trabajar con una cuenta diferente, desde que la cuenta que ocupabamos de MetaMask quedó con una actividad pendiente, al parecer las comisiones que está pidiendo son excesivas, por lo que ocuparemos entonces otra cuenta, vamos a trabajar con la cuenta con la address: 0xC65fA7Ce4FF244727739a81FC4d9805d978e34Df
 
-Vamos a ocupar los contratos proporcionados por Open Zeppelin de [ERC721.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.8.1/contracts/token/ERC721/ERC721.sol) y [ERC1155.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.8.1/contracts/token/ERC1155/ERC1155.sol) respectivamente.
-
 Debido a que queremos interactuar con el contrato, y es necesario verificarlo desde un inicio, conforme al Sprint anterior vimos que tuvimos desafios interesantes con el Hardhat, en específico con el flattener, aún cuando teníamos el archivo "flattened", cuando verificabamos no podía ser identificado una parte del código, no coincidía con la verificación. En este Sprint vamos a ocupar para el despliegue del contrato Remix, con el fin de poder verificar los contratos desde un inicio.
 
+A pesar de trabajar sobre Remix, vamos a cargar los contratos de la misma carpeta donde estabamos trabajando Hardhat para mantener un orden 
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/7582159e-c15b-43f8-be03-b4633161faa3)
+
+
+### MyNFT.sol
+
+Este archivo está hecho con el fin de poder mintear nuevos NFT's, se puede encontrar en el directorio raíz de este GitHub
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/b53aa4cc-3b3a-4117-8141-781a76984042)
+
+Confirmamos que esto será desplegado en la cartera de MetaMask con la address seleccionada
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/72d98597-ce44-408f-b502-6beabe805461)
+
+Desplegamos el contrato y nos pide confirmación en MetaMask
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/189fe0db-25e0-44d4-bf6a-d61ef13e6dea)
+
+Podemos ver que ya fue desplegado el contrato
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/454e27a5-1c91-422b-8477-fe189b4c16d7)
+
+Podemos ver que ya fue desplegado el contrato hace pocos  minutos
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/3f7f5c2b-03a6-4e92-be19-8a4252aeb178)
+
+Se encuentra con las siguientes direcciones:
+
+Transacción: https://testnet.bscscan.com/tx/0x332c8acc3a1c11dd084096993fbdea8ce7fb293818a60a4d6ae3a4e04fac3725
+Address: https://testnet.bscscan.com/address/0x0cbbaccaee14cb19a5f396410f354a536c054be9
+
+Vamos a verificar el contrato puesto que se ve en Bytecode:
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/eac1f9cb-849b-4fe6-9705-fe726068ed84)
+
+En Remix, a partir de determinadas versiones, el Flatten se encuentra en el menú de archivos en vez del plugin asociado, por lo que damos click con el botón derecho al archivo MyNFT.sol y elegimos Flatten para poder unificar todas las librerias con el contrato en un solo archivo
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/ff29dccc-2d5a-4fd8-8c4c-ea4c74baf5c6)
+
+Y obtenemos un archivo MyNFT_flattened.sol con todo el código unificado
+
+Vamos hacia la parte de verificación y llenamos los campos que se piden
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/8df354eb-9242-4210-ac11-88ebc21cb1fa)
+
+Anexamos el código Flattened y Verificamos
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/6086d53b-ad02-4961-8af5-d5aa7ca06e4b)
+
+Y listo, ya tenemos confirmación de que fue generado el Bytecode
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/0f1ebf95-5645-4f55-96ca-aacea58feee8)
+
+Y vemos que ya podemos interactuar con las funciones de lectura y escritura del contrato
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/9c8b1f01-6c47-44b6-aa52-20cd1a5dae9d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### ERC-720
+
+De inicio al importar el archivo en Remix, tuvimos que hacer un ajuste puesto que nos marcaba que no encontraba la libreria ERC165.sol, aunque si es la ruta
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/8c4a409d-8b8b-469e-9a89-95793b9b0559)
+
+
+
 
