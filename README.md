@@ -1,4 +1,4 @@
-# Programación de tokens no fungibles (estándares ERC-720 y ERC-1155) por Alberto López Gutiérrez
+# Programación de tokens no fungibles (estándares ERC-721 y ERC-1155) por Alberto López Gutiérrez
 
 Continuando con el Sprint 3, nos adentramos a la programación de NFT's y un Marketplace para la compra/venta de dichos activos, como los temas anteriores, se me ha hecho sumamente interesante el tema, muchas gracias por el aprendizaje compartido!!!
 
@@ -97,6 +97,9 @@ Si ahora vamos a la parte de lectura, y consultamos el balanceOf con la direcci�
 ![image](https://github.com/alopez2003/NFTMarket/assets/67942268/9836b00b-db2e-4812-981a-961dbaa4b224)
 
 
+Hasta ahora no he podido compilar el contrato NFTMarketplace.sol, seguire intentando para poder continuar.
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/5b087dbe-4ce9-4c82-99fe-789f25b5628a)
 
 
 
@@ -111,25 +114,6 @@ Si ahora vamos a la parte de lectura, y consultamos el balanceOf con la direcci�
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ERC-720
-
-De inicio al importar el archivo en Remix, tuvimos que hacer un ajuste puesto que nos marcaba que no encontraba la libreria ERC165.sol, aunque si es la ruta
-
-![image](https://github.com/alopez2003/NFTMarket/assets/67942268/8c4a409d-8b8b-469e-9a89-95793b9b0559)
 
 
 
