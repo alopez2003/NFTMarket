@@ -107,9 +107,10 @@ Preguntando a ChatGPT, lo que nos recomienda es poner en el constructor la direc
 
 ![image](https://github.com/alopez2003/NFTMarket/assets/67942268/63086564-19d2-49b2-9a68-11b59e26e81e)
 
-Sin embargo, al ponerlo, establece el siguiente warning en el código:
+Sin embargo, al ponerlo, establece el siguiente warning en el código de gas infinito:
 
 ![Screenshot from 2024-03-24 00-13-14](https://github.com/alopez2003/NFTMarket/assets/67942268/19f767a1-310e-4cd7-a8dd-e024a89db3ce)
+
 
 
 
