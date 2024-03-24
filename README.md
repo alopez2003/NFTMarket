@@ -121,7 +121,7 @@ Nos sale el mismo warning una vez desplegado de "Gas estimation failed"
 
 Cancelamos esa operación
 
-Update: actualizamos el Ownable(_NFT_Address) por Ownable(msg.sender), tenemos el mismo error, vamos a probar aún así a ejecutar no haciendo caso al warning
+**Update:** actualizamos el Ownable(_NFT_Address) por Ownable(msg.sender), tenemos el mismo error, vamos a probar aún así a ejecutar no haciendo caso al warning
 
 ![image](https://github.com/alopez2003/NFTMarket/assets/67942268/b3d77ff9-417a-420d-b917-f8d7aa06f781)
 
@@ -147,6 +147,66 @@ Ahora vamos a verificarlo ya que lo tenemos en bytecode
 ![image](https://github.com/alopez2003/NFTMarket/assets/67942268/53867adb-3c84-4d8d-9ba3-954aac7aedc1)
 
 Lo que hacemos es hacer Flatten al codigo (por cierto, lo pueden encontrar esta actualización con el archivo NFTMarketplace(2).sol)
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/abe3e895-ae98-4f71-b2d7-e2a673ae330d)
+
+y nos aparece un archivo NFTMarketplace_flattened.sol
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/c03e74a4-8025-4a3c-af96-79c1bac7da84)
+
+Ese mismo archivo lo llevaremos a la verificación del contrato:
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/8aecd9cc-f1a2-425e-a4a6-2366d447fcf4)
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/f4b1bc5c-24b1-4a28-89bc-2d446051dd35)
+
+
+Y listo, podemos ver que ya fue aceptada la verificación
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/77d4672d-e0fb-4eb0-a5ba-28c6bdcc30d3)
+
+URL del código verificado
+
+https://testnet.bscscan.com/address/0x404a07518541d7f7b7c3ef9a0b82f550866a14e4#code
+
+Podemos ver que ya accedemos a las funciones del contrato tanto de lectura como de escritura
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/9a288e73-259d-4b75-8017-57e775bb6c32)
+
+**Venta de NFT**
+
+Para poder poner en venta el NFT creado, lo primero que tenemos que hacer es aprobar la dirección del Smart Contract de MarketPlace, con address 0x404A07518541d7F7B7c3Ef9a0b82F550866a14e4 en el Smart Contract de MyNFT, donde creamos el NFT.
+
+Establecemos la dirección y el ID del Token, que es el 0 en el campo approve y damos click en Write
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/bd91401d-920c-495d-a2fe-720b0f270cd6)
+
+Pide confirmación MetaMask
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/c3526c59-824b-42b7-a138-cf3fd572cd7e)
+
+Y podemos ver que la transacción se ha creado hace poco
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/f40d9eba-b330-4039-80c8-620a237c137c)
+
+
+URL de la transacción
+
+https://testnet.bscscan.com/tx/0x2491d9ada36b90e9e6afba5d685715d0824e01f684fe361a2d874903618eec66
+
+
+
+
+
+
+
+
+
+
+
+#### approve
+
+
 
 
 
