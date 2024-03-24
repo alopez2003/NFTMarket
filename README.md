@@ -99,7 +99,18 @@ Si ahora vamos a la parte de lectura, y consultamos el balanceOf con la direcci�
 
 Hasta ahora no he podido compilar el contrato NFTMarketplace.sol, seguire intentando para poder continuar.
 
-![image](https://github.com/alopez2003/NFTMarket/assets/67942268/5b087dbe-4ce9-4c82-99fe-789f25b5628a)
+Primero se subió la versión de NFTMarketplace.sol, mismo que se encontrará en este repositorio, se hicieron los cambios pertinentes sobre el archivo NFTMarketplace (1).sol, también anexado en este repositorio, sin embargo en la compilación lo que marca es que, al momento de ser una función que llama a Ownable, necesita parámetros de entrada, aún cuando podemos poner la dirección del Smart Contract del NFT creado, no deja avanzar en la compilación.
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/fcbc991b-d4cb-4bf4-b2e3-7f2aa4a6cd68)
+
+Preguntando a ChatGPT, lo que nos recomienda es poner en el constructor la dirección del dueño original, mismo que puede ser _NFT_address
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/63086564-19d2-49b2-9a68-11b59e26e81e)
+
+Sin embargo, al ponerlo, establece el siguiente warning en el código:
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/dabc1332-3690-4ae7-ae34-04a99073d1e7)
+
 
 
 
