@@ -175,6 +175,8 @@ Podemos ver que ya accedemos a las funciones del contrato tanto de lectura como 
 
 **Venta de NFT**
 
+#### approve
+
 Para poder poner en venta el NFT creado, lo primero que tenemos que hacer es aprobar la dirección del Smart Contract de MarketPlace, con address 0x404A07518541d7F7B7c3Ef9a0b82F550866a14e4 en el Smart Contract de MyNFT, donde creamos el NFT.
 
 Establecemos la dirección y el ID del Token, que es el 0 en el campo approve y damos click en Write
@@ -195,6 +197,61 @@ URL de la transacción
 https://testnet.bscscan.com/tx/0x2491d9ada36b90e9e6afba5d685715d0824e01f684fe361a2d874903618eec66
 
 
+#### Venta - listitem - transfer
+
+Ahora lo que hacemos, una vez aprobado el Smart Contract, vamos a poner en Venta ese NFT
+
+Accedemos en el Smart Contract de NFTMarketplace a la función de escritura listItem y establecemos el ID del NFT, que es el 0, y el precio, que vamos a colocarlo en "1000000" Gwei y damos click en Write
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/b739ca27-7691-4182-867b-8159d5f7bb07)
+
+Pide confirmación en MetaMask
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/66924e35-9b5b-4740-bb98-b1787bbfcdcc)
+
+Y vemos la transacción que ha sido ejecutada hace unos pocos segundos
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/89e28357-853e-4b80-b475-f030d81923e1)
+
+URL de la transacción:
+
+https://testnet.bscscan.com/tx/0x320534d8014b8bdc1bcd3202c3e7c03a88f49856b8d357947dbf435791288285
+
+Podemos ver en los detalles de la transacción que fue ejecutada la función listItem y que fue transferida de mi address a la address del contrato
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/49697a8b-e35e-4144-aafa-acc265bb8279)
+
+#### compra - transferFrom
+
+Ahora vamos a comprar ese NFT desde otra cuenta, con address 0x80392D2071c4E1aBBDdD3DBf8eaCa4431081b787
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/23ead12e-77aa-45e4-8b9f-f79d31d12878)
+
+Accedemos a las funciones de escritura del Smart Contract de NFTMarketplace, pero ahora con la función buyItem
+
+Primero convertimos 1000000 Gwei en BNB, nos da la cantidad de 0.000000000001
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/fb02e558-d49e-42b3-b3d9-4e3f2bee094a)
+
+Establecemos el monto, que es "0.000000000001" y el itemID que es el 0 y damos click en Write
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/b6bec068-00a3-4255-b10c-0eb7a1dae9fc)
+
+Pide confirmación MetaMask
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/b7db6290-9263-4917-938f-1cbdcb85ca6d)
+
+y vemos la transacción que fue ejecutada hace unos pocos segundos
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/dcc3ca75-bc4e-4207-9dd5-a8e9d4e8e380)
+
+URL de la transacción
+
+https://testnet.bscscan.com/tx/0x06a006bf25985b45baaa0b61ac3c868986882f73a2e9c473a03865c53d76d258
+
+Vemos detalles super importantes como que el contrato de Marketplace me mando el NFT al Account 2, pero que la transferencia fue realizada a mi address original (Account 3), 
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/9a08c614-3886-4312-90b6-396998c796dd)
 
 
 
@@ -204,7 +261,27 @@ https://testnet.bscscan.com/tx/0x2491d9ada36b90e9e6afba5d685715d0824e01f684fe361
 
 
 
-#### approve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
