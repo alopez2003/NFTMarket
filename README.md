@@ -111,19 +111,17 @@ Sin embargo, al ponerlo, establece el siguiente warning en el código de gas inf
 
 ![Screenshot from 2024-03-24 00-13-14](https://github.com/alopez2003/NFTMarket/assets/67942268/19f767a1-310e-4cd7-a8dd-e024a89db3ce)
 
+Pegamos la dirección del smart contract donde tenemos nuestro NFT y damos click en Deploy
 
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/e036227c-5e83-4f76-ae00-80395a25d60a)
 
+Nos sale el mismo warning una vez desplegado de "Gas estimation failed"
 
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/6749bdbe-372e-4eea-8fc3-876709cdabde)
 
+Cancelamos esa operación
 
-
-
-
-
-
-
-
-
+Seguimos en investigación de como compilar el código
 
 
 
