@@ -255,44 +255,9 @@ Vemos detalles super importantes como que el contrato de Marketplace me mando el
 
 
 
+Estuve intentando compilar el Contrato de ERC1155.sol, pero no tuve mucho éxito al intentar compilar, me marca un error en una función isContract, seguiré investigando:
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/17a9fe19-6b89-455c-b640-e0e9d39fac79)
 
 
