@@ -121,7 +121,36 @@ Nos sale el mismo warning una vez desplegado de "Gas estimation failed"
 
 Cancelamos esa operación
 
-Seguimos en investigación de como compilar el código
+Update: actualizamos el Ownable(_NFT_Address) por Ownable(msg.sender), tenemos el mismo error, vamos a probar aún así a ejecutar no haciendo caso al warning
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/b3d77ff9-417a-420d-b917-f8d7aa06f781)
+
+Nos pide confirmación MetaMask
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/48de9daf-0dfd-4f10-861c-9b0fb59ea42a)
+
+Aparece desplegado
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/da104ca0-aba3-4dc5-bd12-222da43d146d)
+
+Podemos ver que fue desplegado hace unos momentos
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/ccde40e7-4248-4b49-9594-2fb2dd37fd66)
+
+URL de transacción y de contrato
+
+Transacción: https://testnet.bscscan.com/tx/0x936a344208e2367352c36338e0dcfd4bc86b843d37e3954fcd702bd6665d7e34
+Contrato: https://testnet.bscscan.com/address/0x404a07518541d7f7b7c3ef9a0b82f550866a14e4
+
+Ahora vamos a verificarlo ya que lo tenemos en bytecode
+
+![image](https://github.com/alopez2003/NFTMarket/assets/67942268/53867adb-3c84-4d8d-9ba3-954aac7aedc1)
+
+Lo que hacemos es hacer Flatten al codigo (por cierto, lo pueden encontrar esta actualización con el archivo NFTMarketplace(2).sol)
+
+
+
+
 
 
 
