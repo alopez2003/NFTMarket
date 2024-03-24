@@ -109,7 +109,9 @@ Preguntando a ChatGPT, lo que nos recomienda es poner en el constructor la direc
 
 Sin embargo, al ponerlo, establece el siguiente warning en el código:
 
-![image](https://github.com/alopez2003/NFTMarket/assets/67942268/dabc1332-3690-4ae7-ae34-04a99073d1e7)
+![Screenshot from 2024-03-24 00-13-14](https://github.com/alopez2003/NFTMarket/assets/67942268/19f767a1-310e-4cd7-a8dd-e024a89db3ce)
+
+
 
 
 
